@@ -1,0 +1,28 @@
+@page "/class/{id}"
+@inject HttpClient Http
+
+@if (class_ != null) {
+    <PageTitle>@class_.Name</PageTitle>
+    <h1>@class_.Name</h1>
+    <section>
+        @class_.Text
+    </section>
+} else {
+    <PageTitle>Класс @Id</PageTitle>
+    <h1>Класс @Id</h1>
+    <p role="alert">Извините, данная страница недоступна.</p>
+}
+
+@code{
+    [Parameter]
+    public string Id { get; set; }
+
+    private ClassData? class_;
+
+    protected override async Task OnInitializedAsync()
+    {
+        class_ = await Http.GetFromJsonAsync<ClassData>($"classes/{Id}.json");
+    }
+
+    public record ClassData(string Name, string Text);
+}

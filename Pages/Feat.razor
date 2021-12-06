@@ -1,0 +1,28 @@
+@page "/feat/{id}"
+@inject HttpClient Http
+
+@if (feat != null) {
+    <PageTitle>@feat.Name</PageTitle>
+    <h1>@feat.Name</h1>
+    <section>
+        @feat.Text
+    </section>
+} else {
+    <PageTitle>Черта @Id</PageTitle>
+    <h1>Черта @Id</h1>
+    <p role="alert">Извините, данная страница недоступна.</p>
+}
+
+@code{
+    [Parameter]
+    public string Id { get; set; }
+
+    private FeatData? feat;
+
+    protected override async Task OnInitializedAsync()
+    {
+        feat = await Http.GetFromJsonAsync<FeatData>($"feats/{Id}.json");
+    }
+
+    public record FeatData(string Name, string Text);
+}

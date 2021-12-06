@@ -1,0 +1,38 @@
+name: Deploy to GitHub Pages
+
+# Запускаем магию только на пуши в main
+on:
+  push:
+    branches: main
+    
+jobs:
+  deploy-to-github-pages:
+    runs-on: ubuntu-latest
+    steps:
+      # клонируем репозиторий на виртуальную машину
+    - uses: actions/checkout@v2
+    
+      # ставим нужный SDK (можно использовать и более старые)
+    - name: Setup .NET 6
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '6.0.x'
+        include-prerelease: true
+        
+      # генерируем статические файлы
+    - name: Publish .NET Core Project
+      run: dotnet publish FerraTerra.csproj -c Release --output release --nologo
+      
+      # отключаем jekyll
+    - name: Add .nojekyll file
+      run: touch release/wwwroot/.nojekyll
+      
+      # копируем index.html в 404.html
+    - name: Copy index.html to 404.html
+      run: cp release/wwwroot/index.html release/wwwroot/404.html
+
+    - name: Uploading files to gh-pages branch
+      uses: JamesIves/github-pages-deploy-action@4.1.7
+      with:
+        branch: gh-pages
+        folder: release/wwwroot

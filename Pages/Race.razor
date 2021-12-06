@@ -1,0 +1,28 @@
+@page "/race/{id}"
+@inject HttpClient Http
+
+@if (race != null) {
+    <PageTitle>@race.Name</PageTitle>
+    <h1>@race.Name</h1>
+    <section>
+        @race.Text
+    </section>
+} else {
+    <PageTitle>Раса @Id</PageTitle>
+    <h1>Раса @Id</h1>
+    <p role="alert">Извините, данная страница недоступна.</p>
+}
+
+@code{
+    [Parameter]
+    public string Id { get; set; }
+
+    private RaceData? race;
+
+    protected override async Task OnInitializedAsync()
+    {
+        race = await Http.GetFromJsonAsync<RaceData>($"races/{Id}.json");
+    }
+
+    public record RaceData(string Name, string Text);
+}

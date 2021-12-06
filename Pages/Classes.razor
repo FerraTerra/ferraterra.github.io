@@ -1,0 +1,33 @@
+@page "/classes"
+@inject HttpClient Http
+
+<PageTitle>Классы</PageTitle>
+
+<h1>Классы</h1>
+
+@if(classes != null) {
+    <section>
+        @classes.Text
+    </section>
+    <ul>
+        @foreach (var item in classes.Items)
+        {
+            <a href="class/@item.Key">
+                @item.Value
+            </a>
+        }
+    </ul>
+} else {
+    <p role="alert">Извините, данная страница недоступна.</p>
+}
+
+@code{
+    private ClassesData? classes;
+
+    protected override async Task OnInitializedAsync()
+    {
+        classes = await Http.GetFromJsonAsync<ClassesData>("classes.json");
+    }
+
+    public record ClassesData(string Text, Dictionary<string, string> Items);
+}
