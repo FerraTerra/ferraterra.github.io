@@ -33,11 +33,11 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-q0\/tg8eRRT0yOc\/VAi7X2wPS+nVymEkp5X0i2YK\/wRM=",
+      "hash": "sha256-ZXlibhPh9UU\/hxc0K3AsNjyMqbQ+QLSgU8I2TA25hng=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-ZxYDK2vxQIwi+KpLioGB3NXAwE+RweBGCtHVcPgzbtI=",
+      "hash": "sha256-LAQmJv89gtjijr7lZhuHvxioklqXgltNk\/rx1AonkqM=",
       "url": "_framework\/FerraTerra.dll"
     },
     {
@@ -253,5 +253,5 @@
       "url": "races\/android.json"
     }
   ],
-  "version": "H21\/LVm3"
+  "version": "zeWQnhB+"
 };
