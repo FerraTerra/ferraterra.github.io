@@ -169,7 +169,7 @@
       "url": "classes\/nanocyte.json"
     },
     {
-      "hash": "sha256-kfXT+\/7PwnK7UBTMq8\/AX20+soj7u1sV\/U1lCtnmSZI=",
+      "hash": "sha256-tNixrmUVOYyBtRKh\/zTTvBID12fD\/9jQt5JL05vtPxw=",
       "url": "css\/app.css"
     },
     {
@@ -253,5 +253,5 @@
       "url": "races\/android.json"
     }
   ],
-  "version": "gWzqMlZ+"
+  "version": "HhoYBZMr"
 };
