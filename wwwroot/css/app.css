@@ -64,11 +64,17 @@ a, .btn-link {
     }
 
 
-dl > dt {
-    font-weight: normal;
-    font-style: oblique;
-}
+    p,
+    dt {
+        font-weight: bold;
+    }
     
-dd {
-    margin-bottom: 1rem;
-}
+    dl,
+    dd {
+        font-size: .9rem;
+    }
+    
+    dd {
+        margin-bottom: 1em;
+    }
+    

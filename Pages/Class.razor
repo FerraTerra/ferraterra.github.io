@@ -14,7 +14,6 @@
             <dt>ПЖ:</dt>
             <dd>@class_.SP + <i>Вын</i></dd>
         }
-        </dl>
         @if (class_.Sources != null && class_.Sources.Any()) {
             @if(class_.Sources.Count == 1) {
                 <dt>Source</dt>
@@ -27,6 +26,7 @@
                 </dd>
             }
         }
+        </dl>
     </article>
     <section>
         @class_.Text
