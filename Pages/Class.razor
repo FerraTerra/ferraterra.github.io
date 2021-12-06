@@ -21,7 +21,7 @@
             @if (class_.Sources != null && class_.Sources.Any()) {
                 @if(class_.Sources.Count == 1) {
                     <div class="one">
-                        <dt>Source</dt>
+                        <dt>Source:</dt>
                         @foreach (var source in class_.Sources) {
                             <dd>
                                 <a href=@source.Value>@source.Key</a>
