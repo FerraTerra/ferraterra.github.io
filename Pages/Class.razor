@@ -3,7 +3,31 @@
 
 @if (class_ != null) {
     <PageTitle>@class_.Name</PageTitle>
-    <h1>@class_.Name</h1>
+    <header>
+        <h1>@class_.Name</h1>
+        @if (class_.HP != null) {
+            <p>ПЗ: @class_.HP</p>
+        }
+        @if (class_.SP != null) {
+            <p>ПЖ: @class_.SP + Вын</p>
+        }
+    </header>
+    @if (class_.Sources != null && class_.Sources.Any()) {
+        <article>
+            <p>
+                @if(class_.Sources.Count == 1) {
+                    <b>Source</b>
+                } else {
+                    <b>Sources</b>
+                }
+            </p>
+            <ul>
+                @foreach (var source in class_.Sources) {
+                    <li><a href=@source.Value>@source.Key</a></li>
+                }
+            </ul>
+        </article>
+    }
     <section>
         @class_.Text
     </section>
@@ -24,5 +48,5 @@
         class_ = await Http.GetFromJsonAsync<ClassData>($"classes/{Id}.json");
     }
 
-    public record ClassData(string Name, string Text);
+    public record ClassData(string Name, string Text, Dictionary<string, string> Sources, int? HP, int? SP);
 }
