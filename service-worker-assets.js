@@ -33,11 +33,11 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-+6iCi6s15pe1f0xAX8qXfdO8XH2XnDzKMseACyvDd4w=",
+      "hash": "sha256-q0\/tg8eRRT0yOc\/VAi7X2wPS+nVymEkp5X0i2YK\/wRM=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-OZez9TisBZSm5XjjI88u\/3M5SDD8BQV6f+6l9uhMJE8=",
+      "hash": "sha256-ZxYDK2vxQIwi+KpLioGB3NXAwE+RweBGCtHVcPgzbtI=",
       "url": "_framework\/FerraTerra.dll"
     },
     {
@@ -169,7 +169,7 @@
       "url": "classes\/nanocyte.json"
     },
     {
-      "hash": "sha256-0Mv7FlLOhOl\/j4eR8QYRtpjGY818zoR95iONcG93AWY=",
+      "hash": "sha256-g70VfKd3A6lYIu\/Nlh7elV4Jeb1v1+SDepLPJdog7Gw=",
       "url": "css\/app.css"
     },
     {
@@ -253,5 +253,5 @@
       "url": "races\/android.json"
     }
   ],
-  "version": "SpBkhX3F"
+  "version": "H21\/LVm3"
 };

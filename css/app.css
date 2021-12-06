@@ -59,22 +59,35 @@ a, .btn-link {
     color: white;
 }
 
-    .blazor-error-boundary::after {
-        content: "An error has occurred."
-    }
+.blazor-error-boundary::after {
+    content: "An error has occurred."
+}
 
 
-    p,
-    dt {
-        font-weight: bold;
-    }
+dt {
+    font-weight: bold;
+}
     
-    dl,
-    dd {
-        font-size: .9rem;
-    }
+dl, dd {
+    font-size: .9rem;
+}
     
-    dd {
-        margin-bottom: 1em;
-    }
-    
+dd {
+    margin-bottom: 1em;
+}
+
+.one > dt {
+    display: inline-flex;
+}
+
+.one > dd {
+    display: inline-flex;
+}
+
+.many > dt {
+    display: inline-block;
+}
+
+.many > dd {
+    display: inline-block;
+}
