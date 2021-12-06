@@ -3,31 +3,33 @@
 
 @if (class_ != null) {
     <PageTitle>@class_.Name</PageTitle>
-    <header>
-        <h1>@class_.Name</h1>
+    <h1>@class_.Name</h1>
+    <article>
+        <dl>
         @if (class_.HP != null) {
-            <p>ПЗ: @class_.HP</p>
+            <dt>ПЗ:</dt>
+            <dd>@class_.HP</dd>
         }
         @if (class_.SP != null) {
-            <p>ПЖ: @class_.SP + Вын</p>
+            <dt>ПЖ:</dt>
+            <dd>@class_.SP + <i>Вын</i></dd>
         }
-    </header>
-    @if (class_.Sources != null && class_.Sources.Any()) {
-        <article>
-            <p>
-                @if(class_.Sources.Count == 1) {
-                    <b>Source</b>
-                } else {
-                    <b>Sources</b>
-                }
-            </p>
-            <ul>
-                @foreach (var source in class_.Sources) {
-                    <li><a href=@source.Value>@source.Key</a></li>
-                }
-            </ul>
-        </article>
-    }
+        </dl>
+        @if (class_.Sources != null && class_.Sources.Any()) {
+            @if(class_.Sources.Count == 1) {
+                <dt>Source</dt>
+            } else {
+                <dt>Source</dt>
+            }
+            <dd>
+                <ul>
+                    @foreach (var source in class_.Sources) {
+                        <li><a href=@source.Value>@source.Key</a></li>
+                    }
+                </ul>
+            </dd>
+        }
+    </article>
     <section>
         @class_.Text
     </section>
