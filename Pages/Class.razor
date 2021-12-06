@@ -6,26 +6,39 @@
     <h1>@class_.Name</h1>
     <article>
         <dl>
-        @if (class_.HP != null) {
-            <dt>ПЗ:</dt>
-            <dd>@class_.HP</dd>
-        }
-        @if (class_.SP != null) {
-            <dt>ПЖ:</dt>
-            <dd>@class_.SP + <i>Вын</i></dd>
-        }
-        @if (class_.Sources != null && class_.Sources.Any()) {
-            @if(class_.Sources.Count == 1) {
-                <dt>Source</dt>
-            } else {
-                <dt>Source</dt>
+            @if (class_.HP != null) {
+                <div class="one">
+                    <dt>ПЗ:</dt>
+                    <dd>@class_.HP</dd>
+                </div>
             }
-            @foreach (var source in class_.Sources) {
-                <dd>
-                    <a href=@source.Value>@source.Key</a>
-                </dd>
+            @if (class_.SP != null) {
+                <div class="one">
+                    <dt>ПЖ:</dt>
+                    <dd>@class_.SP + <i>Вын</i></dd>
+                </div>
             }
-        }
+            @if (class_.Sources != null && class_.Sources.Any()) {
+                @if(class_.Sources.Count == 1) {
+                    <div class="one">
+                        <dt>Source</dt>
+                        @foreach (var source in class_.Sources) {
+                            <dd>
+                                <a href=@source.Value>@source.Key</a>
+                            </dd>
+                        }
+                    </div>
+                } else {
+                    <div class="many">
+                        <dt>Sources</dt>
+                        @foreach (var source in class_.Sources) {
+                            <dd>
+                                <a href=@source.Value>@source.Key</a>
+                            </dd>
+                        }
+                    </div>
+                }
+            }
         </dl>
     </article>
     <section>
