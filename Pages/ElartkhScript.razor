@@ -1,0 +1,33 @@
+@page "/elartkh/{text}"
+@inject HttpClient Http
+
+<style>
+article {
+    color: black
+}
+
+@@font-face {
+    font-family: "Ithkuil";
+    src: url("https://mklcp.github.io/ithkey/ithkuil.ttf");
+}
+
+[lang = "Elartkh"]
+{
+    background-color: black;
+    color: white;
+    font-family: "Ithkuil";
+    font-size: xxx-large;
+}
+
+article {
+    background-color: black;
+}
+</style>
+
+<PageTitle>...</PageTitle>
+<h1 lang="Elartkh">@Text</h1>
+
+@code{
+    [Parameter]
+    public string Text { get; set; }
+}
