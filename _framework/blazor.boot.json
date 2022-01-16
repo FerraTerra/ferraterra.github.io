@@ -7,7 +7,7 @@
   "linkerEnabled": true,
   "resources": {
     "assembly": {
-      "FerraTerra.dll": "sha256-7ngFQ+rx8+OyNd28\/chfueejsHpUyjZqVgzkfKPvcKA=",
+      "FerraTerra.dll": "sha256-9qq7a0F9oAPV8FmJLlD7K\/ZEAuc9r6kRbmLGxFneFPs=",
       "Microsoft.AspNetCore.Components.dll": "sha256-OfPNI7UCQFv8hh2XtlZYzY7d9FFHfPRrmnF6aeXeork=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-LxZ7HJ8eLJ8fbfDHpXkGb9VhtdUfHxfLq7a9SmRxCiM=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-Ph2ZOl\/LOY2cCUG\/S2iA61YUWIsDlcAHFxzdTG43rPw=",
@@ -30,11 +30,12 @@
       "System.Net.Http.dll": "sha256-drWULVU4mdLEznCKmZzPZ1ImslZFJWqsz9y+QT5QIx4=",
       "System.Net.Http.Json.dll": "sha256-3no\/YmYlnjcGWz3\/55pqBufHeyR2mzVOviYGnujGh\/g=",
       "System.Net.Primitives.dll": "sha256-ypruf1U7Twj2DVFyMoZeTMLBGKUgYa\/XzAE5Cy89H2Q=",
-      "System.Private.CoreLib.dll": "sha256-c3Wmfct6xe9BpbtbtqJgTWyHFYKrBOiLlcuxD2fVcHE=",
+      "System.Private.CoreLib.dll": "sha256-C4iOcB1GCaMefYZ124u1KLh40jdzpXdFJsuIhQ1Y1hA=",
       "System.Private.Runtime.InteropServices.JavaScript.dll": "sha256-pGGjiG51Qm\/BwhI3nxtnIkqYgm8aXZp9+jO8CMZuipc=",
       "System.Private.Uri.dll": "sha256-5r0WfGlonucskxAJ+jxj5iXceJpx0x2Lg69ezMaJ6kg=",
       "System.Runtime.CompilerServices.Unsafe.dll": "sha256-NJPcPizDV6A4CjOnszxYro9mJMWaHq2cGM2\/A0bAFNY=",
-      "System.Runtime.dll": "sha256-IHbcTXgPepwzkRPPm5sWORGUPSdreoBIQ1iN0Bf2HTk=",
+      "System.Runtime.dll": "sha256-LM7f90xH11uZl0vkIiigMTHAAGtAD9C8AaDljz6VDZc=",
+      "System.Runtime.Numerics.dll": "sha256-uk93PEseaH2ArJGn9SjLanKgscmfTych82WT7q1XzI0=",
       "System.Text.Encodings.Web.dll": "sha256-gUV2fOrOUGrNK6Oj1AxlN44sKTuN4hYA1DxX8xuRU2c=",
       "System.Text.Json.dll": "sha256-wg8WHO9ThupkQUXugIpgZUpU+aMdIZzhEGKK7D9X9\/Y="
     },

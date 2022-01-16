@@ -33,11 +33,11 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-SKy9M+eONpkktn31otUX0ORhfGKuC93q\/jd9mh5J4hI=",
+      "hash": "sha256-WH8mvirFMasUxh9IT8R\/XGgmtBNiizrfrs897j1SzFo=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-7ngFQ+rx8+OyNd28\/chfueejsHpUyjZqVgzkfKPvcKA=",
+      "hash": "sha256-9qq7a0F9oAPV8FmJLlD7K\/ZEAuc9r6kRbmLGxFneFPs=",
       "url": "_framework\/FerraTerra.dll"
     },
     {
@@ -129,7 +129,7 @@
       "url": "_framework\/System.Net.Primitives.dll"
     },
     {
-      "hash": "sha256-c3Wmfct6xe9BpbtbtqJgTWyHFYKrBOiLlcuxD2fVcHE=",
+      "hash": "sha256-C4iOcB1GCaMefYZ124u1KLh40jdzpXdFJsuIhQ1Y1hA=",
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
@@ -145,8 +145,12 @@
       "url": "_framework\/System.Runtime.CompilerServices.Unsafe.dll"
     },
     {
-      "hash": "sha256-IHbcTXgPepwzkRPPm5sWORGUPSdreoBIQ1iN0Bf2HTk=",
+      "hash": "sha256-LM7f90xH11uZl0vkIiigMTHAAGtAD9C8AaDljz6VDZc=",
       "url": "_framework\/System.Runtime.dll"
+    },
+    {
+      "hash": "sha256-uk93PEseaH2ArJGn9SjLanKgscmfTych82WT7q1XzI0=",
+      "url": "_framework\/System.Runtime.Numerics.dll"
     },
     {
       "hash": "sha256-gUV2fOrOUGrNK6Oj1AxlN44sKTuN4hYA1DxX8xuRU2c=",
@@ -257,5 +261,5 @@
       "url": "races\/android.json"
     }
   ],
-  "version": "LU2MnfNG"
+  "version": "8L8MaQLo"
 };
