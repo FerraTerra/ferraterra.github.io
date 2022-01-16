@@ -1,0 +1,107 @@
+@page "/elartkh-natural/{text}"
+@inject HttpClient Http
+
+<style>
+article {
+    color: black
+}
+
+@@font-face {
+    font-family: "Ithkuil";
+    src: url("https://mklcp.github.io/ithkey/ithkuil.ttf");
+}
+
+[lang = "Elartkh"]
+{
+    background-color: black;
+    color: white;
+    font-family: "Ithkuil";
+    font-size: xxx-large;
+    line-height: 2;
+    padding: inherit;
+}
+</style>
+
+<PageTitle>...</PageTitle>
+<h1 lang="Elartkh">
+    @{
+        var number = System.Numerics.BigInteger.Parse(Text);
+        var text = "";
+        if (number <= 0) {
+            text = "Number must be better then 0";
+        }
+        else {
+            do {
+                if (number % System.Numerics.BigInteger.Parse("10000000000000000") == 0)
+                {
+                    number /= System.Numerics.BigInteger.Parse("10000000000000000");
+                    text = "\U000C0011" + text;
+                }
+                else if (number % 100000000 == 0)
+                {
+                    number /= 100000000;
+                    text = "\U000C0010" + text;
+                }
+                else if (number % 10000 == 0)
+                {
+                    number /= 10000;
+                    text = "\U000C000F" + text;
+                }
+                else if (number % 100 == 0)
+                {
+                    number /= 100;
+                    text = "\U000C000E" + text;
+                }
+                else if (number % 10 == 0)
+                {
+                    var digit = (int)(number % 100);
+                    number /= 100;
+                    text = "\U000C000D" + (digit / 10) switch {
+                        1  => "\U000C0050",
+                        2  => "\U000C0051",
+                        3  => "\U000C0052",
+                        4  => "\U000C0053",
+                        5  => "\U000C0054",
+                        6  => "\U000C0055",
+                        7  => "\U000C0056",
+                        8  => "\U000C0057",
+                        9  => "\U000C0058"
+                    } + text;
+                }
+                else
+                {
+                    var digit = (int)(number % 100);
+                    number /= 100;
+                    text = (digit % 10) switch {
+                        1  => "\U000C0004",
+                        2  => "\U000C0005",
+                        3  => "\U000C0006",
+                        4  => "\U000C0007",
+                        5  => "\U000C0008",
+                        6  => "\U000C0009",
+                        7  => "\U000C000A",
+                        8  => "\U000C000B",
+                        9  => "\U000C000C"
+                    } + (digit / 10) switch {
+                        0  => "\U000C0050",
+                        1  => "\U000C0051",
+                        2  => "\U000C0052",
+                        3  => "\U000C0053",
+                        4  => "\U000C0054",
+                        5  => "\U000C0055",
+                        6  => "\U000C0056",
+                        7  => "\U000C0057",
+                        8  => "\U000C0058",
+                        9  => "\U000C0059"
+                    } + text;
+                }
+            } while (number > 0);
+        }
+    }
+    @(text)
+</h1>
+
+@code{
+    [Parameter]
+    public string Text { get; set; }
+}
