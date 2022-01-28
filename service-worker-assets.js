@@ -33,11 +33,11 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-2YvpwyeBbSB133a\/wJ1b1HBz4fuiaA2ypQGuPQQjA6E=",
+      "hash": "sha256-S81PrX1Tz9FT0bmariB0BL2aPL1rZVntkdrcMKUQCRU=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-NrIMqWVuzjK+0YQPMdaz2fMPWb1eNRzIxdJXdxuOS8U=",
+      "hash": "sha256-Pjhi89FI90DqsYptB4FyxQOvHZJt6QAFmROYkAXsuww=",
       "url": "_framework\/FerraTerra.dll"
     },
     {
@@ -133,7 +133,7 @@
       "url": "_framework\/System.Net.Primitives.dll"
     },
     {
-      "hash": "sha256-E\/7Vu3AP5lCAEhSA1Kd7b+9GRAgltZNxKPIQoMeauTQ=",
+      "hash": "sha256-Bf0VEEvvhRgr5MydmF6llHiWZ4oozBOGhFcY1R2mJzM=",
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
@@ -149,7 +149,7 @@
       "url": "_framework\/System.Runtime.CompilerServices.Unsafe.dll"
     },
     {
-      "hash": "sha256-\/+pFj4WSwMSx+67Mftv2+8lbCVx2dSKUGd1u\/CFv6Ew=",
+      "hash": "sha256-CKRyVa2aHZ1c6HjTrzkkJT0rtWu8ejNJNungTRwW2QE=",
       "url": "_framework\/System.Runtime.dll"
     },
     {
@@ -181,9 +181,9 @@
       "url": "index.html"
     },
     {
-      "hash": "sha256-r\/nvpWP1ZwFuk5dVycaiI3Hhh3p\/QxEbqE9dsiY17cA=",
+      "hash": "sha256-HhokLSDQEQE8qTq3\/VbvM4KszuLITJf41aLNp6gtlkI=",
       "url": "index.json"
     }
   ],
-  "version": "lVQDFrAz"
+  "version": "0yBtefzj"
 };
