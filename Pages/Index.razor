@@ -80,6 +80,13 @@
                     </table>
                 </dd>
             </div>
+        } if (index[Id].type is not "class" && index[Id].exts is not null) {
+            <div>
+                <dt>Связанное</dt>
+                @foreach (var ext in index) {
+                    <dd><td><a href=@($"/{ext}")>@index[ext].name</a></td></dd>
+                }
+            </div>
         }
     </dl>
 } else {
