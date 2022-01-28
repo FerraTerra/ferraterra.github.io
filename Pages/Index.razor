@@ -70,18 +70,26 @@
                                 <td>@index["fort"].name</td>
                                 <td>@index["ref"].name</td>
                                 <td>@index["will"].name</td>
+                                @if (index[Id].name == "nanocyte")
+                                {
+                                    <td>Основные формы</td>
+                                    <td>Дополнительные формы</td>
+                                }
                                 <td>@index["special"].name</td>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach (var level in Enumerable.Range(1, 20))
-                            {
+                            @foreach (var level in Enumerable.Range(1, 20)) {
                                 <tr>
                                     <td>@($"{level}th")</td>
                                     <td>+@BabQApp(level, @index[Id].bab)</td>
                                     <td>+@SaveQApp(level, @index[Id].fort)</td>
                                     <td>+@SaveQApp(level, @index[Id].@ref)</td>
                                     <td>+@SaveQApp(level, @index[Id].will)</td>
+                                    @if (index[Id].name == "nanocyte") {
+                                        <td>@(3 + level / 4 - (level <= 2 ? 1 : 0))</td>
+                                        <td>@(3 + level / 2)</td>
+                                    }
                                     @foreach (var ext in index[Id].exts) {
                                         @if (index[ext].mods is not null && index[ext].mods.Contains("class") & index[ext].mods.Contains(level.ToString()))
                                         {
