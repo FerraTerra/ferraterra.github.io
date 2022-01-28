@@ -115,6 +115,23 @@
                 }
             </div>
         }
+        @if (index[Id].srcs is not null) {
+            <div>
+                <dt>Исходники</dt>
+                @foreach (var src in index[Id].srcs) {
+                    <dd>
+                    <dl>
+                        @if(src.href is null) {
+                            <dt>@src.name</dt>
+                        } else {
+                            <dt><a href=@src.href>@src.name</a></dt>
+                        }
+                        <dd>src.desc</dd>
+                    </dl>
+                    </dd>
+                }
+            </div>
+        }
     </dl>
 } else {
     <PageTitle>404</PageTitle>
@@ -164,5 +181,6 @@
         public string? @ref { get; init; }
         public string? will { get; init; }
         public string[]? exts { get; init; }
+        public (string name, string desc, string? href)[]? exts { get; init; }
     }
 }
