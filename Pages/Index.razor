@@ -80,7 +80,7 @@
                     </table>
                 </dd>
             </div>
-        } if (index[Id].type is not "class" && index[Id].exts is not null) {
+        } else if (index[Id].type is not "class" && index[Id].exts is not null) {
             <div>
                 <dt>Связанное</dt>
                 @foreach (var ext in index[Id].exts) {
