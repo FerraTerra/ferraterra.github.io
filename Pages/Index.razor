@@ -70,7 +70,7 @@
                                 <td>@index["fort"].name</td>
                                 <td>@index["ref"].name</td>
                                 <td>@index["will"].name</td>
-                                @if (index[Id].name is "nanocyte")
+                                @if (Id is "nanocyte")
                                 {
                                     <td>Основные формы</td>
                                     <td>Дополнительные формы</td>
@@ -86,7 +86,7 @@
                                     <td>+@SaveQApp(level, @index[Id].fort)</td>
                                     <td>+@SaveQApp(level, @index[Id].@ref)</td>
                                     <td>+@SaveQApp(level, @index[Id].will)</td>
-                                    @if (index[Id].name is "nanocyte") {
+                                    @if (Id is "nanocyte") {
                                         <td>@(3 + level / 4 - (level <= 2 ? 1 : 0))</td>
                                         <td>@(3 + level / 2)</td>
                                     }
