@@ -87,7 +87,7 @@
                                     <td>+@SaveQApp(level, @index[Id].@ref)</td>
                                     <td>+@SaveQApp(level, @index[Id].will)</td>
                                     @if (Id is "nanocyte") {
-                                        <td>@(3 + level / 4 - (level <= 2 ? 1 : 0))</td>
+                                        <td>@(3 + (level + 1) / 4 - (level <= 2 ? 1 : 0))</td>
                                         <td>@(3 + level / 2)</td>
                                     }
                                     @foreach (var ext in index[Id].exts) {
