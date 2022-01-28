@@ -11,7 +11,7 @@
         "sp": 6,
         "key": "con",
         "skills": [
-            "acribatics",
+            "acrobatics",
             "athlitics",
             "computer",
             "engineering",
@@ -78,6 +78,10 @@
     "con": {
         "type": "ability",
         "name": "ВЫН"
+    },
+    "int": {
+        "type": "ability",
+        "name": "ИНТ"
     },
     "key": {
         "type": "rule",
@@ -1031,5 +1035,17 @@
             "18"
         ],
         "name": "Внезапная трансформация"
-    }
+    },
+    "acrobatics": { "type": "skill", "name": "Акробатика" },
+    "athlitics": { "type": "skill", "name": "Атлетика" },
+    "computer": { "type": "skill", "name": "Компьютеры" },
+    "engineering": { "type": "skill", "name": "Инженерное дело" },
+    "life science": { "type": "skill", "name": "Биологические науки" },
+    "medicine": { "type": "skill", "name": "Медицина" },
+    "perception": { "type": "skill", "name": "Внимание" },
+    "phisical science": { "type": "skill", "name": "Физические науки" },
+    "piloting": { "type": "skill", "name": "Пилотирование" },
+    "profession": { "type": "skill", "name": "Профессия" },
+    "sleight of hand": { "type": "skill", "name": "Ловкость рук" },
+    "stealth": { "type": "skill", "name": "Скрытность" }
 }

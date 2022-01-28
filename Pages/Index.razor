@@ -5,6 +5,7 @@
     <PageTitle>@index[Id].name</PageTitle>
     <details>
         <summary>
+            <i><a href=@($"{index[index[Id].type].name}">@index[Id].type</i>
             <h1>@index[Id].name</h1>
         </summary>
         @if (index[Id].desc is not null) {
@@ -32,6 +33,17 @@
             <div>
                 <dt><a href="/sp">@index["sp"].name</a>:</dt>
                 <dd>@index[Id].sp + <i><a href="/con">@index["con"].name</a></i></dd>
+            </div>
+            <div>
+                <dt><a href="/skills">@index["skills"].name</a>:</dt>
+                @foreach (var skill in index[Id].skills)
+                {
+                    <dd><a href=@($"/{skill}")>@index[skill].name</a></dd>
+                }
+            </div>
+            <div>
+                <dt><a href="/points">@index["points"].name</a>:</dt>
+                <dd>@index[Id].points + <i><a href="/int">@index["int"].name</a></i></dd>
             </div>
             <div>
                 <dt><a href="/armor">@index["armor"].name</a>:</dt>
@@ -80,7 +92,8 @@
                     </table>
                 </dd>
             </div>
-        } else if (index[Id].type is not "class" && index[Id].exts is not null) {
+        }
+        @if (index[Id].type is not "class" && index[Id].exts is not null) {
             <div>
                 <dt>Связанное</dt>
                 @foreach (var ext in index[Id].exts) {
