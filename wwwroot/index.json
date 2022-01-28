@@ -1,0 +1,1031 @@
+{
+    "nanocyte": {
+        "type": "class",
+        "name": "Наноцит",
+        "desc": [
+            [
+                "Тело наноцита состоит из некоторого числа нанитов, вольно или невольно приобретённых. При определённых ситуациях они могут образовывать необходимые носителю формы и инструменты."
+            ]
+        ],
+        "hp": 6,
+        "sp": 6,
+        "key": "con",
+        "skills": [
+            "acribatics",
+            "athlitics",
+            "computer",
+            "engineering",
+            "life science",
+            "medicine",
+            "perception",
+            "phisical science",
+            "piloting",
+            "profession",
+            "sleight of hand",
+            "stealth"
+        ],
+        "points": 6,
+        "armor": [
+            "light armor"
+        ],
+        "weapon": [
+            "basic melee",
+            "advanced melee",
+            "small arms",
+            "longarms"
+        ],
+        "bab": "1",
+        "fort": "good",
+        "ref": "poor",
+        "will": "poor",
+        "exts": [
+            "nanite surge",
+            "nanite array",
+            "primary nanite faculty",
+            "primary faculty technique",
+            "defensive dispersal",
+            "nanocyte knack",
+            "cyto-conversion",
+            "weapon specialization",
+            "manifold array",
+            "secondary nanite faculty",
+            "secondary faculty technique",
+            "eternal nanites",
+            "living legion",
+            "infinite array"
+        ]
+    },
+    "basic melee": {
+        "type": "weapon",
+        "name": "Простое оружие ближнего боя"
+    },
+    "advanced melee": {
+        "type": "weapon",
+        "name": "Высокотехнологичное оружие ближнего боя"
+    },
+    "small arms": {
+        "type": "weapon",
+        "name": "Короткоствольное ружьё"
+    },
+    "longarms": {
+        "type": "weapon",
+        "name": "Длинноствольное ружьё"
+    },
+    "light armor": {
+        "type": "armor",
+        "name": "Лёгкая броня"
+    },
+    "con": {
+        "type": "ability",
+        "name": "ВЫН"
+    },
+    "key": {
+        "type": "rule",
+        "name": "Ключевая характеристика"
+    },
+    "skills": {
+        "type": "rule",
+        "name": "Классовые навыки"
+    },
+    "special": {
+        "type": "rule",
+        "name": "Классовые черты"
+    },
+    "points": {
+        "type": "rule",
+        "name": "Пункты навыков"
+    },
+    "feat": {
+        "type": "rule",
+        "name": "Черты"
+    },
+    "ability": {
+        "type": "rule",
+        "name": "Характеристика"
+    },
+    "class": {
+        "type": "rule",
+        "name": "Класс"
+    },
+    "weapon": {
+        "type": "rule",
+        "name": "Оружие"
+    },
+    "armor": {
+        "type": "rule",
+        "name": "Броня"
+    },
+    "rule": {
+        "type": "rule",
+        "name": "Правило"
+    },
+    "name": {
+        "type": "rule",
+        "name": "Название"
+    },
+    "desc": {
+        "type": "rule",
+        "name": "Описание"
+    },
+    "hp": {
+        "type": "rule",
+        "name": "ПЗ"
+    },
+    "sp": {
+        "type": "rule",
+        "name": "ПВ"
+    },
+    "level": {
+        "type": "rule",
+        "name": "Уровень"
+    },
+    "bab": {
+        "type": "rule",
+        "name": "БМА"
+    },
+    "fort": {
+        "type": "rule",
+        "name": "Стойкость"
+    },
+    "ref": {
+        "type": "rule",
+        "name": "Рефлексы"
+    },
+    "will": {
+        "type": "rule",
+        "name": "Воля"
+    },
+    "skill": {
+        "type": "rule",
+        "name": "Навык"
+    },
+    "nanite array": {
+        "type": "feat",
+        "mods": [
+            "class",
+            "1"
+        ],
+        "name": "Массив",
+        "desc": [
+            [
+                "Наниты могут образовывать различные формы внутри и вне тела наноцита."
+            ]
+        ]
+    },
+    "nanite surge": {
+        "type": "feat",
+        "mods": [
+            "class",
+            "1"
+        ],
+        "name": "Перегрузка",
+        "desc": [
+            [
+                "В определённых ситуациях можно перегрузить наниты для получения особых возможностей."
+            ]
+        ]
+    },
+    "primary nanite faculty": {
+        "type": "feat",
+        "mods": [
+            "class",
+            "1"
+        ],
+        "name": "Первичный нанитный путь",
+        "desc": [
+            [
+                "На первом уровне наноцит выбирает путь, в котором будут развиваться его способности."
+            ]
+        ]
+    },
+    "primary faculty technique": {
+        "type": "feat",
+        "mods": [
+            "class",
+            "1",
+            "5",
+            "9",
+            "13",
+            "17"
+        ],
+        "name": "Техника первичного пути",
+        "desc": [
+            [
+                "На каждом 1+4n уровне (n - целое число ≥ 0), наноцит получает технику пути."
+            ]
+        ]
+    },
+    "secondary nanite faculty": {
+        "type": "feat",
+        "mods": [
+            "class",
+            "9"
+        ],
+        "name": "Второстепенный нанитный путь",
+        "desc": [
+            [
+                "На девятом уровне наноцит выбирает вспомогательный путь, в котором будут развиваться его способности. Выбор производится из тех же путей, что и на первом уровне, однако на этот путь накладывается штраф в 9 уровне"
+            ]
+        ]
+    },
+    "secondary faculty technique": {
+        "type": "feat",
+        "mods": [
+            "class",
+            "9",
+            "13",
+            "17"
+        ],
+        "name": "Техника второстепенного пути",
+        "desc": [
+            [
+                "На каждом 9+4n уровне (n - целое число ≥ 0), наноцит получает технику вспомогательного пути."
+            ]
+        ]
+    },
+    "defensive dispersal": {
+        "type": "feat",
+        "mods": [
+            "class",
+            "2"
+        ],
+        "name": "Активная защита",
+        "desc": [
+            [
+                "Наноцит может использовать",
+                "#nanite surge",
+                "в ответ на получение урона, чтобы создать щит или временно рассеять часть своего тела."
+            ]
+        ]
+    },
+    "nanocyte knack": {
+        "type": "feat",
+        "mods": [
+            "class",
+            "2",
+            "6",
+            "10",
+            "14",
+            "18"
+        ],
+        "name": "Приём",
+        "desc": [
+            [
+                "Каждые 2+2n (n - целое ≥ 0) наноцит выбирает себе новый приём."
+            ]
+        ],
+        "exts": [
+            "abundant nanites",
+            "agile host",
+            "esoteric edge",
+            "heavy armor edge",
+            "myriad forms",
+            "split manifestation",
+            "surgical host",
+            "swarm host",
+            "versatile nanites",
+            "enhanced immunities",
+            "facial reconfiguration",
+            "heavy weapon edge",
+            "hungry nanites",
+            "instant architect",
+            "sencory nanites",
+            "adaptable weaponry",
+            "alacritous form",
+            "all-seeing nanites",
+            "biometric theft",
+            "defencive doppelganger",
+            "feasting nanites",
+            "group dispersal",
+            "rapid reshape",
+            "thousand stitches",
+            "charge vampire",
+            "deconstructor",
+            "menacing pall",
+            "become legion",
+            "omnipresent form",
+            "omniscient nanites",
+            "sudden transformation"
+        ]
+    },
+    "cyto-conversion": {
+        "type": "feat",
+        "mods": [
+            "class",
+            "3",
+            "10",
+            "16"
+        ],
+        "name": "Преобразование",
+        "desc": [
+            [
+                "Постепенно тело наноцита превращается в колонию нанитов. Бонус +1 к обстоятельствам к СЛ кровотечения, болезни, яда и сна. С шансом в 10% критический урон может стать обычным."
+            ]
+        ]
+    },
+    "weapon specialization": {
+        "type": "feat",
+        "mods": [
+            "class",
+            "3"
+        ],
+        "name": "Специализация",
+        "desc": [
+            [
+                "Наноцит получает Специализацию в навыке владения каждым оружием которым он способен пользоваться, в т.ч. приобретённым благодаря нанитным приёмам."
+            ]
+        ]
+    },
+    "manifold array": {
+        "type": "feat",
+        "mods": [
+            "class",
+            "7",
+            "15"
+        ],
+        "name": "Множественность",
+        "desc": [
+            [
+                "На седьмом уровне наноцит получает способность образовывать вторичную форму, а на пятнадцатом - третичную."
+            ]
+        ]
+    },
+    "eternal nanites": {
+        "type": "feat",
+        "mods": [
+            "class",
+            "11"
+        ],
+        "name": "Вечность",
+        "desc": [
+            [
+                "Наниты наноцита восстанавливаются быстрее."
+            ]
+        ]
+    },
+    "living legion": {
+        "type": "feat",
+        "mods": [
+            "class",
+            "19"
+        ],
+        "name": "Легион",
+        "desc": [
+            [
+                "Наниты вторичной и третичной формы работают эффективнее. А, раз в день в качестве действия передвижения, наниты увеличивают свою численность, дабы предоставить на 10 минут возможность 10 раз их дополнительно перегрузить."
+            ]
+        ]
+    },
+    "infinite array": {
+        "type": "feat",
+        "mods": [
+            "class",
+            "20"
+        ],
+        "name": "Бесконечность",
+        "desc": [
+            [
+                "Раз в день, если наноцит умер, наниты могут полностью восстановить наноцита."
+            ]
+        ]
+    },
+    "nanite faculty": {
+        "type": "rule",
+        "mods": [
+            "class",
+            "1",
+            "9"
+        ],
+        "name": "Нанитный путь"
+    },
+    "faculty technique": {
+        "type": "rule",
+        "mods": [
+            "class",
+            "1",
+            "5",
+            "9",
+            "13",
+            "17"
+        ],
+        "name": "Техника пути"
+    },
+    "discorporation": {
+        "type": "rule",
+        "mods": [
+            "nanite faculty",
+            "1",
+            "9"
+        ],
+        "name": "Уклонение",
+        "desc": [
+            [
+                "Наниты перестраивают тело наноцита, придавая ему гибкость и аморфность."
+            ]
+        ]
+    },
+    "infestigation": {
+        "type": "rule",
+        "mods": [
+            "nanite faculty",
+            "1",
+            "9"
+        ],
+        "name": "Заражение",
+        "desc": [
+            [
+                "Наниты проникают во врагов и пожирают их изнутри."
+            ]
+        ]
+    },
+    "obliteration": {
+        "type": "rule",
+        "mods": [
+            "nanite faculty",
+            "1",
+            "9"
+        ],
+        "name": "Уничтожение",
+        "desc": [
+            [
+                "Наниты улучшают оружие наноцита, дабы нанести максимальный урон, либо заменяют его."
+            ]
+        ]
+    },
+    "redirection": {
+        "type": "rule",
+        "mods": [
+            "nanite faculty",
+            "1",
+            "9"
+        ],
+        "name": "Направление",
+        "desc": [
+            [
+                "Наниты энергичны и сильны, они учатся перенаправлять атаки и не только."
+            ]
+        ]
+    },
+    "regeneration": {
+        "type": "rule",
+        "mods": [
+            "nanite faculty",
+            "1",
+            "9"
+        ],
+        "name": "Восстановление",
+        "desc": [
+            [
+                "Наниты учатся заживлять плоть, стабилизировать жизненные ритмы, заживляют поверхностные раны наноцита и его спутников."
+            ]
+        ]
+    },
+    "reactive spray": {
+        "type": "feat",
+        "mods": [
+            "discorporation",
+            "1"
+        ],
+        "name": "Спрей"
+    },
+    "slithering shape": {
+        "type": "feat",
+        "mods": [
+            "discorporation",
+            "5"
+        ],
+        "name": "Скольжение"
+    },
+    "fluid form": {
+        "type": "feat",
+        "mods": [
+            "discorporation",
+            "9"
+        ],
+        "name": "Жидкость"
+    },
+    "nanosmoke": {
+        "type": "feat",
+        "mods": [
+            "discorporation",
+            "13"
+        ],
+        "name": "Дым"
+    },
+    "swarm shadow": {
+        "type": "feat",
+        "mods": [
+            "discorporation",
+            "17"
+        ],
+        "name": "Тень"
+    },
+    "malignant fist": {
+        "type": "feat",
+        "mods": [
+            "infestigation",
+            "1"
+        ],
+        "name": "Туман"
+    },
+    "tenacious swarm": {
+        "type": "feat",
+        "mods": [
+            "infestigation",
+            "5"
+        ],
+        "name": "Рой"
+    },
+    "toxic host": {
+        "type": "feat",
+        "mods": [
+            "infestigation",
+            "9"
+        ],
+        "name": "Токсичность"
+    },
+    "noxious nanites": {
+        "type": "feat",
+        "mods": [
+            "infestigation",
+            "13"
+        ],
+        "name": "Вредность"
+    },
+    "engeneering contagion": {
+        "type": "feat",
+        "mods": [
+            "infestigation",
+            "17"
+        ],
+        "name": "Инженерия"
+    },
+    "unstoppable nanites": {
+        "type": "feat",
+        "mods": [
+            "obliteration",
+            "1"
+        ],
+        "name": "Стремительность"
+    },
+    "energized swarm": {
+        "type": "feat",
+        "mods": [
+            "obliteration",
+            "5"
+        ],
+        "name": "Энергичность"
+    },
+    "spreading swarm": {
+        "type": "feat",
+        "mods": [
+            "obliteration",
+            "9"
+        ],
+        "name": "Распространение"
+    },
+    "flashing nanites": {
+        "type": "feat",
+        "mods": [
+            "obliteration",
+            "13"
+        ],
+        "name": "Вспышка"
+    },
+    "microscopic bombardment": {
+        "type": "feat",
+        "mods": [
+            "obliteration",
+            "17"
+        ],
+        "name": "Взрыв"
+    },
+    "seeking strike": {
+        "type": "feat",
+        "mods": [
+            "redirection",
+            "1"
+        ],
+        "name": "Меткий выстрел"
+    },
+    "particle push": {
+        "type": "feat",
+        "mods": [
+            "redirection",
+            "5"
+        ],
+        "name": "Частичность"
+    },
+    "bend bullet": {
+        "type": "feat",
+        "mods": [
+            "redirection",
+            "9"
+        ],
+        "name": "Изогнутость"
+    },
+    "rebounding strike": {
+        "type": "feat",
+        "mods": [
+            "redirection",
+            "13"
+        ],
+        "name": "Отражение"
+    },
+    "particle tsunami": {
+        "type": "feat",
+        "mods": [
+            "redirection",
+            "17"
+        ],
+        "name": "Цунами"
+    },
+    "reactive repair": {
+        "type": "feat",
+        "mods": [
+            "regeneration",
+            "1"
+        ],
+        "name": "Восстановление"
+    },
+    "nanomedicine": {
+        "type": "feat",
+        "mods": [
+            "regeneration",
+            "5"
+        ],
+        "name": "Медицина"
+    },
+    "flesh donor": {
+        "type": "feat",
+        "mods": [
+            "regeneration",
+            "9"
+        ],
+        "name": "Донор"
+    },
+    "from the brink": {
+        "type": "feat",
+        "mods": [
+            "regeneration",
+            "13"
+        ],
+        "name": "Край"
+    },
+    "healing swarm": {
+        "type": "feat",
+        "mods": [
+            "regeneration",
+            "17"
+        ],
+        "name": "Лечение"
+    },
+    "abundant nanites": {
+        "type": "feat",
+        "mods": [
+            "nanite knack",
+            "2",
+            "6",
+            "10",
+            "14",
+            "18"
+        ],
+        "name": "Обилие нанитов"
+    },
+    "agile host": {
+        "type": "feat",
+        "mods": [
+            "nanite knack",
+            "2",
+            "6",
+            "10",
+            "14",
+            "18"
+        ],
+        "name": "Гибкий носитель"
+    },
+    "esoteric edge": {
+        "type": "feat",
+        "mods": [
+            "nanite knack",
+            "2",
+            "6",
+            "10",
+            "14",
+            "18"
+        ],
+        "name": "Эзотерическая грань"
+    },
+    "heavy armor edge": {
+        "type": "feat",
+        "mods": [
+            "nanite knack",
+            "2",
+            "6",
+            "10",
+            "14",
+            "18"
+        ],
+        "name": "Грань тяжёлой брони"
+    },
+    "myriad forms": {
+        "type": "feat",
+        "mods": [
+            "nanite knack",
+            "2",
+            "6",
+            "10",
+            "14",
+            "18"
+        ],
+        "name": "Множество форм"
+    },
+    "split manifestation": {
+        "type": "feat",
+        "mods": [
+            "nanite knack",
+            "2",
+            "6",
+            "10",
+            "14",
+            "18"
+        ],
+        "name": "Раздельное проявление"
+    },
+    "surgical host": {
+        "type": "feat",
+        "mods": [
+            "nanite knack",
+            "2",
+            "6",
+            "10",
+            "14",
+            "18"
+        ],
+        "name": "Носитель-хирург"
+    },
+    "swarm host": {
+        "type": "feat",
+        "mods": [
+            "nanite knack",
+            "2",
+            "6",
+            "10",
+            "14",
+            "18"
+        ],
+        "name": "Носитель-рой"
+    },
+    "versatile nanites": {
+        "type": "feat",
+        "mods": [
+            "nanite knack",
+            "2",
+            "6",
+            "10",
+            "14",
+            "18"
+        ],
+        "name": "Разносторонние наниты"
+    },
+    "enhanced immunities": {
+        "type": "feat",
+        "mods": [
+            "nanite knack",
+            "6",
+            "10",
+            "14",
+            "18"
+        ],
+        "name": "Улучшенный иммунитет"
+    },
+    "facial reconfiguration": {
+        "type": "feat",
+        "mods": [
+            "nanite knack",
+            "6",
+            "10",
+            "14",
+            "18"
+        ],
+        "req": [
+            [
+                "versatile nanites"
+            ]
+        ],
+        "name": "Смена внешности"
+    },
+    "heavy weapon edge": {
+        "type": "feat",
+        "mods": [
+            "nanite knack",
+            "6",
+            "10",
+            "14",
+            "18"
+        ],
+        "name": "Грань тяжёлого оружия"
+    },
+    "hungry nanites": {
+        "type": "feat",
+        "mods": [
+            "nanite knack",
+            "6",
+            "10",
+            "14",
+            "18"
+        ],
+        "name": "Голодные наниты"
+    },
+    "instant architect": {
+        "type": "feat",
+        "mods": [
+            "nanite knack",
+            "6",
+            "10",
+            "14",
+            "18"
+        ],
+        "name": "Мгновенное строительство"
+    },
+    "sencory nanites": {
+        "type": "feat",
+        "mods": [
+            "nanite knack",
+            "6",
+            "10",
+            "14",
+            "18"
+        ],
+        "name": "Чуствительные наниты"
+    },
+    "adaptable weaponry": {
+        "type": "feat",
+        "mods": [
+            "nanite knack",
+            "10",
+            "14",
+            "18"
+        ],
+        "name": "Адаптируемое оружие"
+    },
+    "alacritous form": {
+        "type": "feat",
+        "mods": [
+            "nanite knack",
+            "10",
+            "14",
+            "18"
+        ],
+        "name": "Энергичная форма"
+    },
+    "all-seeing nanites": {
+        "type": "feat",
+        "mods": [
+            "nanite knack",
+            "10",
+            "14",
+            "18"
+        ],
+        "req": [
+            [
+                "sensory nanites"
+            ]
+        ],
+        "name": "Всевидящие наниты"
+    },
+    "biometric theft": {
+        "type": "feat",
+        "mods": [
+            "nanite knack",
+            "10",
+            "14",
+            "18"
+        ],
+        "name": "Кража биометрии"
+    },
+    "defencive doppelganger": {
+        "type": "feat",
+        "mods": [
+            "nanite knack",
+            "10",
+            "14",
+            "18"
+        ],
+        "name": "Защитный двойник"
+    },
+    "feasting nanites": {
+        "type": "feat",
+        "mods": [
+            "nanite knack",
+            "10",
+            "14",
+            "18"
+        ],
+        "req": [
+            [
+                "hungry nanites"
+            ]
+        ],
+        "name": "Пир нанитов"
+    },
+    "group dispersal": {
+        "type": "feat",
+        "mods": [
+            "nanite knack",
+            "10",
+            "14",
+            "18"
+        ],
+        "name": "Групповое расстредоточение"
+    },
+    "rapid reshape": {
+        "type": "feat",
+        "mods": [
+            "nanite knack",
+            "10",
+            "14",
+            "18"
+        ],
+        "name": "Быстрая смена формы"
+    },
+    "thousand stitches": {
+        "type": "feat",
+        "mods": [
+            "nanite knack",
+            "10",
+            "14",
+            "18"
+        ],
+        "req": [
+            [
+                "surgical host"
+            ]
+        ],
+        "name": "Тысяча швов"
+    },
+    "charge vampire": {
+        "type": "feat",
+        "mods": [
+            "nanite knack",
+            "14",
+            "18"
+        ],
+        "name": "Энергетический вампир"
+    },
+    "deconstructor": {
+        "type": "feat",
+        "mods": [
+            "nanite knack",
+            "14",
+            "18"
+        ],
+        "name": "Разборщик"
+    },
+    "menacing pall": {
+        "type": "feat",
+        "mods": [
+            "nanite knack",
+            "14",
+            "18"
+        ],
+        "name": "Угрожающий покров"
+    },
+    "become legion": {
+        "type": "feat",
+        "mods": [
+            "nanite knack",
+            "18"
+        ],
+        "name": "Становление легиона"
+    },
+    "omnipresent form": {
+        "type": "feat",
+        "mods": [
+            "nanite knack",
+            "18"
+        ],
+        "name": "Вездесущая форма"
+    },
+    "omniscient nanites": {
+        "type": "feat",
+        "mods": [
+            "nanite knack",
+            "18"
+        ],
+        "req": [
+            [
+                "all-seeing nanites"
+            ]
+        ],
+        "name": "Всеведающие наниты"
+    },
+    "sudden transformation": {
+        "type": "feat",
+        "mods": [
+            "nanite knack",
+            "18"
+        ],
+        "name": "Внезапная трансформация"
+    }
+}

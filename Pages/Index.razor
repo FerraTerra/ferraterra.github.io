@@ -1,5 +1,134 @@
-﻿@page "/"
+@page "/{id}"
+@inject HttpClient Http
 
-<PageTitle>Добро пожаловать!</PageTitle>
+@if (index.ContainsKey(Id)) {
+    <PageTitle>@index[Id].name</PageTitle>
+    <details>
+        <summary>
+            <h1>@index[Id].name</h1>
+        </summary>
+        @if (index[Id].desc is not null) {
+            @foreach (var descline in index[Id].desc) {
+                <p>
+                @foreach (var desc in descline) {
+                    @if (desc.StartsWith("##")) {
+                        @desc.Substring(1)
+                    } else if (desc.StartsWith("#")) {
+                        <a href=@desc.Substring(1)>@index[desc.Substring(1)].name</a>
+                    } else {
+                        @desc
+                    }
+                }
+                </p>
+            }
+        }
+    </details>
+    <dl>
+        @if (index[Id].type == "class") {
+            <div>
+                <dt><a href="/hp">@index["hp"].name</a>:</dt>
+                <dd>@index[Id].hp</dd>
+            </div>
+            <div>
+                <dt><a href="/sp">@index["sp"].name</a>:</dt>
+                <dd>@index[Id].sp + <i><a href="/con">@index["con"].name</a></i></dd>
+            </div>
+            <div>
+                <dt><a href="/armor">@index["armor"].name</a>:</dt>
+                @foreach (var armor in index[Id].armor) {
+                    <dd><a href=@($"/{armor}")>@index[armor].name</a></dd>
+                }
+            </div>
+            <div>
+                <dt><a href="/weapon">@index["weapon"].name</a>:</dt>
+                @foreach (var weapon in index[Id].weapon) {
+                    <dd><a href=@($"/{weapon}")>@index[weapon].name</a></dd>
+                }
+            </div>
+            <div>
+                <dt></dt>
+                <dd>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>@index["level"].name</td>
+                                <td>@index["bab"].name</td>
+                                <td>@index["fort"].name</td>
+                                <td>@index["ref"].name</td>
+                                <td>@index["will"].name</td>
+                                <td>@index["special"].name</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var level in Enumerable.Range(1, 20))
+                            {
+                                <tr>
+                                    <td>@($"{level}th")</td>
+                                    <td>+@BabQApp(level, @index[Id].bab)</td>
+                                    <td>+@SaveQApp(level, @index[Id].fort)</td>
+                                    <td>+@SaveQApp(level, @index[Id].@ref)</td>
+                                    <td>+@SaveQApp(level, @index[Id].will)</td>
+                                    @foreach (var ext in index[Id].exts) {
+                                        @if (index[ext].mods is not null && index[ext].mods.Contains("class") & index[ext].mods.Contains(level.ToString()))
+                                        {
+                                            <td><a href=@($"/{ext}")>@index[ext].name</a></td>
+                                        }
+                                    }
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </dd>
+            </div>
+        }
+    </dl>
+} else {
+    <PageTitle>404</PageTitle>
+    <p>Страницы с именем "@Id" нет</p>
+}
 
-<h1>Добро пожаловать!</h1>
+@code
+{
+    [Parameter]
+    public string Id { get; set; }
+
+    private Dictionary<string, IndexRaw>? index;
+
+    protected override async Task OnInitializedAsync()
+    {
+        index = await Http.GetFromJsonAsync<Dictionary<string, IndexRaw>>($"index.json");
+    }
+
+    public string BabQApp(int level, string? q) => q switch {
+        "1" => level.ToString(),
+        "3/4" => (level * 3 / 4).ToString(),
+        "1/2" => (level * 1 / 2).ToString(),
+        _ => ""
+    };
+
+    public string SaveQApp(int level, string? q) => q switch {
+        "good" => (2 + level / 2).ToString(),
+        "poor" => (level / 3).ToString(),
+        _ => ""
+    };
+
+    public struct IndexRaw
+    {
+        public string type { get; init; }
+        public string? name { get; init; }
+        public string[][]? desc { get; init; }
+        public string[]? mods { get; init; }
+        public string[][]? req { get; init; }
+        public int? hp { get; init; }
+        public int? sp { get; init; }
+        public string[]? skills { get; init; }
+        public int? points { get; init; }
+        public string[]? armor { get; init; }
+        public string[]? weapon { get; init; }
+        public string? bab { get; init; }
+        public string? fort { get; init; }
+        public string? @ref { get; init; }
+        public string? will { get; init; }
+        public string[]? exts { get; init; }
+    }
+}
