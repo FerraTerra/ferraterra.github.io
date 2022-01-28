@@ -181,9 +181,9 @@
       "url": "index.html"
     },
     {
-      "hash": "sha256-Wf04SFSiQMc3vqsFYMUT+vNUsYr1bd06XI+X9zn5guA=",
+      "hash": "sha256-skxBjbHIIVsn8o9f9HOxI1l95tACpvHUnNCqXtCWSmE=",
       "url": "index.json"
     }
   ],
-  "version": "Y74JMz64"
+  "version": "9E1NKGar"
 };
