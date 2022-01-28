@@ -33,11 +33,11 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-iUzrc+\/91EqnhXmStHRNqS75mjYji1gu8mFk3wh+yOU=",
+      "hash": "sha256-+5Dq4fi6Tx34nJ\/1Sc92hefJ51c\/22ONxGPGctanrJQ=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-Am992yDJ9gKR8tfONQBQa\/EBPlLhRd3ZMlMGHUypudY=",
+      "hash": "sha256-yHOjJUBaByumXRz1tZZbhzUidcH9dDp4H8rAXPe2quc=",
       "url": "_framework\/FerraTerra.dll"
     },
     {
@@ -181,9 +181,9 @@
       "url": "index.html"
     },
     {
-      "hash": "sha256-lhmxP5ICs0ftccp\/YB6Wl5nVTroPgI0oCGXRc8sLvdc=",
+      "hash": "sha256-4Kg7ZOBvLLpLGnz13xz7rbHbQmqIVmpRWFmuXMO0umU=",
       "url": "index.json"
     }
   ],
-  "version": "DQcEcaGq"
+  "version": "a9tFa4Ab"
 };
