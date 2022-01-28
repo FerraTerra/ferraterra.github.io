@@ -196,7 +196,8 @@
             [
                 "На первом уровне наноцит выбирает путь, в котором будут развиваться его способности."
             ]
-        ]
+        ],
+        "exts": ["nanite faculty"]
     },
     "primary faculty technique": {
         "type": "feat",
@@ -226,7 +227,8 @@
             [
                 "На девятом уровне наноцит выбирает вспомогательный путь, в котором будут развиваться его способности. Выбор производится из тех же путей, что и на первом уровне, однако на этот путь накладывается штраф в 9 уровне"
             ]
-        ]
+        ],
+        "exts": ["nanite faculty"]
     },
     "secondary faculty technique": {
         "type": "feat",
@@ -396,7 +398,8 @@
             "1",
             "9"
         ],
-        "name": "Нанитный путь"
+        "name": "Нанитный путь",
+        "exts": ["discorporation", "infestigation", "obliteration", "redirection", "regeneration", "swarm shadow"]
     },
     "faculty technique": {
         "type": "rule",
@@ -422,7 +425,8 @@
             [
                 "Наниты перестраивают тело наноцита, придавая ему гибкость и аморфность."
             ]
-        ]
+        ],
+        "exts": ["reactive spray", "slithering shape", "fluid form", "nanosmoke", ]
     },
     "infestigation": {
         "type": "rule",
