@@ -399,7 +399,7 @@
             "9"
         ],
         "name": "Нанитный путь",
-        "exts": ["discorporation", "infestigation", "obliteration", "redirection", "regeneration", "swarm shadow"]
+        "exts": ["discorporation", "infestigation", "obliteration", "redirection", "regeneration"]
     },
     "faculty technique": {
         "type": "rule",
@@ -426,7 +426,7 @@
                 "Наниты перестраивают тело наноцита, придавая ему гибкость и аморфность."
             ]
         ],
-        "exts": ["reactive spray", "slithering shape", "fluid form", "nanosmoke", ]
+        "exts": ["reactive spray", "slithering shape", "fluid form", "nanosmoke", "swarm shadow"]
     },
     "infestigation": {
         "type": "rule",
