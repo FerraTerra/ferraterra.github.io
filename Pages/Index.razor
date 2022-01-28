@@ -90,12 +90,16 @@
                                         <td>@(3 + (level - 1) / 4 - (level <= 2 ? 1 : 0))</td>
                                         <td>@(3 + level / 2)</td>
                                     }
+                                    <td>
+                                    <ul>
                                     @foreach (var ext in index[Id].exts) {
                                         @if (index[ext].mods is not null && index[ext].mods.Contains("class") & index[ext].mods.Contains(level.ToString()))
                                         {
-                                            <td><a href=@($"/{ext}")>@index[ext].name</a></td>
+                                            <li><a href=@($"/{ext}")>@index[ext].name</a></li>
                                         }
                                     }
+                                    </ul>
+                                    </td>
                                 </tr>
                             }
                         </tbody>
